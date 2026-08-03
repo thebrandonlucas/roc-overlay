@@ -142,7 +142,7 @@ EOF
 # 2. Resolve it to the full commit SHA.
 # 3. Confirm that the full SHA starts with the tag’s prefix.
 # 4. Store an unambiguous compiler commit in sources.json.
-# 5. Derive the expected compiler version.
+# 5. Record the nightly tag as the expected compiler version.
 #
 # This provides stronger provenance than storing only a seven-character prefix.
 commit_json="$tmpdir/commit.json"
@@ -152,7 +152,9 @@ compiler_commit=$(jq -er '.sha' "$commit_json")
   echo "error: tag commit '$short_commit' resolved to '$compiler_commit'" >&2
   exit 1
 }
-compiler_version="release-fast-${compiler_commit:0:8}"
+# Nightly builds report their release tag rather than their optimization mode
+# and commit prefix.
+compiler_version="$tag"
 
 # Construct mapping for which OS and arch each archive supports.
 systems_json="$tmpdir/systems.json"
