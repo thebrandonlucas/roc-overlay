@@ -1,5 +1,5 @@
 {
-  "latest": "nightly-2026-August-03-94cbed3",
+  "latest": "nightly-2026-August-04-1cb06bc",
   "releases": {
     "nightly-2026-August-03-94cbed3": {
       "compilerCommit": "94cbed386c51a8739ced3be76e7ab7b84dd22852",
@@ -28,6 +28,34 @@
         }
       },
       "tag": "nightly-2026-August-03-94cbed3"
+    },
+    "nightly-2026-August-04-1cb06bc": {
+      "compilerCommit": "1cb06bc03852414fc105bc524bb8689d76b39540",
+      "compilerVersion": "nightly-2026-August-04-1cb06bc",
+      "publishedAt": "2026-08-04T13:32:42Z",
+      "systems": {
+        "aarch64-darwin": {
+          "asset": "roc_nightly-macos_apple_silicon-2026-08-04-1cb06bc.tar.gz",
+          "sha256": "sha256-6lXYpfAPcGdxGBBjaopHyxvZQ45lCRqJBbmcETx4ghs=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-August-04-1cb06bc/roc_nightly-macos_apple_silicon-2026-08-04-1cb06bc.tar.gz"
+        },
+        "aarch64-linux": {
+          "asset": "roc_nightly-linux_arm64-2026-08-04-1cb06bc.tar.gz",
+          "sha256": "sha256-ucvXr2imb8nU1FUEMO0CpwelxgD6nKO411FxAPYNeek=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-August-04-1cb06bc/roc_nightly-linux_arm64-2026-08-04-1cb06bc.tar.gz"
+        },
+        "x86_64-darwin": {
+          "asset": "roc_nightly-macos_x86_64-2026-08-04-1cb06bc.tar.gz",
+          "sha256": "sha256-uE+pDLZDTaG7NPH7n8CmaVIg8kHZSAafl2R5M7i15r4=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-August-04-1cb06bc/roc_nightly-macos_x86_64-2026-08-04-1cb06bc.tar.gz"
+        },
+        "x86_64-linux": {
+          "asset": "roc_nightly-linux_x86_64-2026-08-04-1cb06bc.tar.gz",
+          "sha256": "sha256-NW04iCx3kjrHjiHY2p76POjy7yDRQ/QqJViVjrgqkzk=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-August-04-1cb06bc/roc_nightly-linux_x86_64-2026-08-04-1cb06bc.tar.gz"
+        }
+      },
+      "tag": "nightly-2026-August-04-1cb06bc"
     },
     "nightly-2026-July-14-c9147c2": {
       "compilerCommit": "c9147c281f29182a5c715bee4c9e095b7a812292",
