@@ -74,17 +74,20 @@ tag=$(jq -er '.tag_name' "$release_json")
   exit 1
 }
 
-# Match the tag against expected regex or fail.
-if [[ ! "$tag" =~ ^nightly-([0-9]{4})-([A-Za-z]+)-([0-9]{2})-([0-9a-f]{7,40})$ ]]; then
+# Accept current numeric dates while retaining support for legacy word-month tags.
+if [[ "$tag" =~ ^nightly-([0-9]{4})-([0-9]{2})-([0-9]{2})-([0-9a-f]{7,40})$ ]]; then
+  release_date="${BASH_REMATCH[1]}-${BASH_REMATCH[2]}-${BASH_REMATCH[3]}"
+  short_commit=${BASH_REMATCH[4]}
+elif [[ "$tag" =~ ^nightly-([0-9]{4})-([A-Za-z]+)-([0-9]{2})-([0-9a-f]{7,40})$ ]]; then
+  year=${BASH_REMATCH[1]}
+  month=${BASH_REMATCH[2]}
+  day=${BASH_REMATCH[3]}
+  short_commit=${BASH_REMATCH[4]}
+  release_date=$(date --date="$month $day $year" +%Y-%m-%d)
+else
   echo "error: unexpected release tag: $tag" >&2
   exit 1
 fi
-# what is BASH_REMATCH?
-year=${BASH_REMATCH[1]}
-month=${BASH_REMATCH[2]}
-day=${BASH_REMATCH[3]}
-short_commit=${BASH_REMATCH[4]}
-release_date=$(date --date="$month $day $year" +%Y-%m-%d)
 
 # Refuse mutable releases since they're non-reproducible.
 [[ $(jq -er '.immutable' "$release_json") == true ]] || {
