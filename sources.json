@@ -1,5 +1,5 @@
 {
-  "latest": "nightly-2026-08-08-195c9e7",
+  "latest": "nightly-2026-08-09-19f8823",
   "releases": {
     "nightly-2026-08-08-195c9e7": {
       "compilerCommit": "195c9e77f4635a18ee71b3acfc10804b99f7ab3f",
@@ -28,6 +28,34 @@
         }
       },
       "tag": "nightly-2026-08-08-195c9e7"
+    },
+    "nightly-2026-08-09-19f8823": {
+      "compilerCommit": "19f88238cf9394b1312023c2082b264eae2ed906",
+      "compilerVersion": "nightly-2026-08-09-19f8823",
+      "publishedAt": "2026-08-09T10:06:31Z",
+      "systems": {
+        "aarch64-darwin": {
+          "asset": "roc_nightly-macos_apple_silicon-2026-08-09-19f8823.tar.gz",
+          "sha256": "sha256-OJBrj2eiV4ou5XsXCF31FxY+fZnkaD8uN2C65rbr6GQ=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-08-09-19f8823/roc_nightly-macos_apple_silicon-2026-08-09-19f8823.tar.gz"
+        },
+        "aarch64-linux": {
+          "asset": "roc_nightly-linux_arm64-2026-08-09-19f8823.tar.gz",
+          "sha256": "sha256-fAdagix6CthfXb5Yp6TeMSeovbE4zbr9KVqrxOGp2bc=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-08-09-19f8823/roc_nightly-linux_arm64-2026-08-09-19f8823.tar.gz"
+        },
+        "x86_64-darwin": {
+          "asset": "roc_nightly-macos_x86_64-2026-08-09-19f8823.tar.gz",
+          "sha256": "sha256-rARswHEtHke2wbsHeChp92KgFa5BgE4dxv5W/E/9ELU=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-08-09-19f8823/roc_nightly-macos_x86_64-2026-08-09-19f8823.tar.gz"
+        },
+        "x86_64-linux": {
+          "asset": "roc_nightly-linux_x86_64-2026-08-09-19f8823.tar.gz",
+          "sha256": "sha256-d7dNMtEC/5ldSmps/GQrZ4IqXgSmtJ0royz4Albig6o=",
+          "url": "https://github.com/roc-lang/nightlies/releases/download/nightly-2026-08-09-19f8823/roc_nightly-linux_x86_64-2026-08-09-19f8823.tar.gz"
+        }
+      },
+      "tag": "nightly-2026-08-09-19f8823"
     },
     "nightly-2026-August-03-94cbed3": {
       "compilerCommit": "94cbed386c51a8739ced3be76e7ab7b84dd22852",
