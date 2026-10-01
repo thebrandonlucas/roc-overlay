@@ -1,5 +1,7 @@
 # Nix Flake for Nightly Roc
 
+NOTE: deprecated in favor of [https://github.com/roc-lang/roc-overlay](https://github.com/roc-lang/roc-overlay).
+
 A Nix flake for the [Roc new-compiler nightly binaries](https://github.com/roc-lang/nightlies/releases). Inspired by [Mitchell Hashimoto's](https://mitchellh.com/) [zig-overlay](https://github.com/mitchellh/zig-overlay).
 
 This flake just mirrors prebuilt official Roc binaries; it does not build Roc from source. At present, it only provides [nightly](https://github.com/roc-lang/nightlies/releases) releases, as the [new Zig compiler](https://gist.github.com/rtfeldman/f46bcbfe5132d62c4095dfa687bb9aa4) has no stable release yet.
